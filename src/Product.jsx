@@ -25,7 +25,7 @@ function Product({ name, price, image, onAddToCart, cart, setCart }) {
         src={image}
         alt={name}
         className="card-img-top"
-        style={{ height: "200px", objectFit: "cover" }}
+        style={{ height: "200px", objectFit: "contain" }}
       />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>

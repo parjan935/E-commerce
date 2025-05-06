@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import Product from "./Product.jsx";
+
 import laptop from "./assets/laptop.jpg";
 import headphones from "./assets/headphones.jpeg";
 import smartphone from "./assets/smarrtphone.jpeg";
+import smartwatch from "./assets/smartwatch.webp";
+import camera from "./assets/camera.jpg";
+import tablet from "./assets/tablet.webp";
+
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Cart from "./Cart.jsx";
@@ -33,9 +38,9 @@ function ProductList() {
     { name: "Laptop", price: 899, image: laptop },
     { name: "Headphones", price: 199, image: headphones },
     { name: "Smartphone", price: 699, image: smartphone },
-    { name: "Tablet", price: 499, image: smartphone },
-    { name: "Smartwatch", price: 299, image: headphones },
-    { name: "Camera", price: 599, image: laptop },
+    { name: "Tablet", price: 499, image: tablet },
+    { name: "Smartwatch", price: 299, image: smartwatch },
+    { name: "Camera", price: 599, image: camera },
   ];
 
   return (
@@ -45,7 +50,7 @@ function ProductList() {
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h1>Products</h1>
           <button className="btn btn-primary" onClick={() => setShowCart(true)}>
-            Go to Cart ({cart.length})
+            Show Cart ({cart.length})
           </button>
         </div>
         {showCart ? (
