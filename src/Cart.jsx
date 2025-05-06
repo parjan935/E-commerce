@@ -72,11 +72,11 @@ const Cart = ({ items, setItems, showCart }) => {
                 </button>
               </div>
             ))}
+            <div className="d-flex justify-content-end">
+              <button className="btn btn-success">Place Order</button>
+            </div>
           </div>
         )}
-        <div className="d-flex justify-content-end">
-          <button className="btn btn-success">Place Order</button>
-        </div>
       </div>
     </div>
   );
